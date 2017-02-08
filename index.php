@@ -15,17 +15,10 @@
                     <?php include("./html/startMenu.html");?>
                 </div>
                 <div class="files">
-                    
-                    <div class="file trashBox">
-                        <Div class="file-item">
-                            <div class="icon">
-                                <i class="fa fa-trash" aria-hidden="true"></i>
-                            </div>
-                            <div class="title">
-                                TrashBOX
-                            </div>
-                        </Div>
-                    </div>
+                    <?php include("./html/files.html"); ?>
+                </div>
+                <div class="windows">
+                    <?php include("./html/windows.html"); ?>
                 </div>
             </div>
             
@@ -33,5 +26,7 @@
                <?php include("./html/taskBar.html"); ?>
             </div>
         </div>
+        
+        
     </body>
 </html>

@@ -63,3 +63,18 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+.fileStyle{
+    position: absolute;
+    cursor: default;
+    .icon{
+        &:hover{
+            transition: $transition;
+            color: $silver;
+        }
+        font-size: $xxLargeSize;
+    }
+    .title{
+        line-height: $lineHeight+0.5;
+    }
+}

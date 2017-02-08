@@ -214,13 +214,24 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
 .border-day {
   border: solid #fff; }
 
-.prl, body .desktop .taskBar .taskBarItems ul li .item, body .desktop .playGround .startMenu {
+.prl, body .desktop .taskBar .taskBarItems ul li .item, body .desktop .playGround .startMenu, body .desktop .playGround .windows .window .window-item .top {
   padding-left: 15px;
   padding-right: 15px; }
 
 .ptb, body .desktop .playGround .startMenu {
   padding-top: 15px;
   padding-bottom: 15px; }
+
+.fileStyle, body .desktop .playGround .files .trashBox, body .desktop .playGround .files .documents, body .desktop .playGround .files .control, body .desktop .playGround .files .terminal {
+  position: absolute;
+  cursor: default; }
+  .fileStyle .icon, body .desktop .playGround .files .trashBox .icon, body .desktop .playGround .files .documents .icon, body .desktop .playGround .files .control .icon, body .desktop .playGround .files .terminal .icon {
+    font-size: 54px; }
+    .fileStyle .icon:hover, body .desktop .playGround .files .trashBox .icon:hover, body .desktop .playGround .files .documents .icon:hover, body .desktop .playGround .files .control .icon:hover, body .desktop .playGround .files .terminal .icon:hover {
+      transition: 0.3s;
+      color: #e2e2e2; }
+  .fileStyle .title, body .desktop .playGround .files .trashBox .title, body .desktop .playGround .files .documents .title, body .desktop .playGround .files .control .title, body .desktop .playGround .files .terminal .title {
+    line-height: 1.5; }
 
 body {
   color: #000;
@@ -298,6 +309,7 @@ body {
       body .desktop .playGround .startMenu {
         position: absolute;
         display: none;
+        z-index: 2;
         bottom: 0;
         left: 0;
         color: #fff;
@@ -316,24 +328,67 @@ body {
       body .desktop .playGround .files {
         position: relative;
         height: 100%;
-        color: #fff; }
+        color: #fff;
+        z-index: 1; }
         body .desktop .playGround .files .file {
-          width: 110px;
-          height: 110px; }
+          width: 120px;
+          height: 120px; }
           body .desktop .playGround .files .file .file-item {
             margin: 16px;
             text-align: center; }
         body .desktop .playGround .files .trashBox {
-          position: absolute;
           bottom: 0;
-          right: 0;
-          cursor: default; }
-          body .desktop .playGround .files .trashBox .icon {
-            font-size: 54px; }
-            body .desktop .playGround .files .trashBox .icon:hover {
-              transition: 0.3s;
-              color: #e2e2e2; }
-          body .desktop .playGround .files .trashBox .title {
-            line-height: 1.5; }
+          right: 0; }
+        body .desktop .playGround .files .documents {
+          top: 0;
+          left: 0; }
+        body .desktop .playGround .files .control {
+          top: 120px;
+          left: 0; }
+        body .desktop .playGround .files .terminal {
+          top: calc(2* 120px);
+          left: 0; }
+      body .desktop .playGround .windows {
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc(100% - 120px*2); }
+        body .desktop .playGround .windows .window {
+          width: 80%;
+          height: 600px; }
+          body .desktop .playGround .windows .window .window-item {
+            margin: 24px; }
+            body .desktop .playGround .windows .window .window-item .top {
+              background-color: #09afe3;
+              color: #fff;
+              height: 35px;
+              line-height: 35px;
+              cursor: default; }
+              body .desktop .playGround .windows .window .window-item .top .logo {
+                text-align: left; }
+              body .desktop .playGround .windows .window .window-item .top .text {
+                text-align: center; }
+              body .desktop .playGround .windows .window .window-item .top .windowsActions {
+                text-align: right; }
+                body .desktop .playGround .windows .window .window-item .top .windowsActions:hoveR {
+                  transition: 0.3s;
+                  color: #e0382d; }
+            body .desktop .playGround .windows .window .window-item .body {
+              background-color: rgba(255, 255, 255, 0.972);
+              min-height: 400px;
+              padding-top: 7.11111px;
+              padding-bottom: 7.11111px; }
+        body .desktop .playGround .windows .terminal {
+          display: none; }
+          body .desktop .playGround .windows .terminal .window-item .body {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #e2e2e2;
+            font-family: monospace; }
+            body .desktop .playGround .windows .terminal .window-item .body b {
+              color: #e0382d;
+              font-weight: 700; }
+            body .desktop .playGround .windows .terminal .window-item .body span {
+              color: #09afe3; }
 
 /*# sourceMappingURL=style.css.map */
