@@ -186,14 +186,13 @@ body{
                         }
                         .body{
                             background-color: rgba($day,$opacity*1.08);
-                            min-height: 400px;
+                            $windowBodyHeight:400px !global;
+                            min-height: $windowBodyHeight;
                             padding-top: $xSmallSize;
-                            padding-bottom: $xSmallSize;
                         }
                     }
                 }
                 .terminal{
-                    display: none;
                     .window-item{
                         .body{
                             background-color: rgba($night,$opacity);
@@ -202,6 +201,13 @@ body{
                             b{
                                 color: $fire;
                                 font-weight: $strong;
+                            }
+                            textarea{
+                                background-color: transparent;
+                                border: 0;
+                                color: $day;
+                                width:100%;
+                                min-height: $windowBodyHeight;
                             }
                             span{
                                 color: $sky;

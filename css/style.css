@@ -377,18 +377,21 @@ body {
             body .desktop .playGround .windows .window .window-item .body {
               background-color: rgba(255, 255, 255, 0.972);
               min-height: 400px;
-              padding-top: 7.11111px;
-              padding-bottom: 7.11111px; }
-        body .desktop .playGround .windows .terminal {
-          display: none; }
-          body .desktop .playGround .windows .terminal .window-item .body {
-            background-color: rgba(0, 0, 0, 0.9);
-            color: #e2e2e2;
-            font-family: monospace; }
-            body .desktop .playGround .windows .terminal .window-item .body b {
-              color: #e0382d;
-              font-weight: 700; }
-            body .desktop .playGround .windows .terminal .window-item .body span {
-              color: #09afe3; }
+              padding-top: 7.11111px; }
+        body .desktop .playGround .windows .terminal .window-item .body {
+          background-color: rgba(0, 0, 0, 0.9);
+          color: #e2e2e2;
+          font-family: monospace; }
+          body .desktop .playGround .windows .terminal .window-item .body b {
+            color: #e0382d;
+            font-weight: 700; }
+          body .desktop .playGround .windows .terminal .window-item .body textarea {
+            background-color: transparent;
+            border: 0;
+            color: #fff;
+            width: 100%;
+            min-height: 400px; }
+          body .desktop .playGround .windows .terminal .window-item .body span {
+            color: #09afe3; }
 
 /*# sourceMappingURL=style.css.map */
