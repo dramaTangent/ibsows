@@ -1,0 +1,147 @@
+
+@import "imports.scss";
+
+body{
+    background-image: url("../images/wallpaper.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    .desktop{
+        position: relative;
+        display: block;
+        overflow: hidden;
+        height: 100vh;
+    
+        .taskBar{
+            position: absolute;
+            bottom: 0;
+            $taskBarColor:$night;
+            background-color: $taskBarColor;
+            width: 100%;
+            color: $day;
+            $taskBarHeight:50px !global;
+            height: $taskBarHeight;
+            border: 0;
+            font-size: $largeSize;
+            .taskBarItems{
+                ul{
+                    li{
+                        cursor: default;
+                        .item{
+                            height: $taskBarHeight;
+                            text-align: center;
+                            line-height: $taskBarHeight;
+                            @extend .prl;
+                            &:hoveR{
+                                transition: $transition;
+                                background-color: lighten(rgba($taskBarColor,0.8),10%);
+                            }
+                        }
+                        .bars{
+                            i{
+                                color: coral;
+                            }
+                        }
+                        .ie{
+                            i{
+                                color: $sky;
+                            }
+                        }
+                        .folder{
+                            i{
+                                color: orange;
+                            }
+                        }
+                        .store{
+                            i{
+                                color: $silver;
+                            }
+                        }
+                    }
+                    &:last-child{
+                        li{
+                            font-size: $smallSize;
+                            &:last-child{    
+                                .time{
+                                    p{
+                                        display: block;
+                                    }
+                                }
+                            }
+                            .item{
+                                
+                            }
+                        }   
+                    }
+                }
+            }
+        }
+        .playGround{
+            position: relative;
+            display: block;
+            $playGroundHeight: calc(100% - #{$taskBarHeight});
+            height:$playGroundHeight;
+            .startMenu{
+                position: absolute;
+                display: none;
+                bottom: 0;
+                left: 0;
+                color: $day;
+                width: grid(5);
+                $minStartMenuHeight:60vh;
+                min-height: $minStartMenuHeight;
+                background-color: rgba($night,$opacity);
+                border: 1px solid rgba($sky,0.5);
+                border-left: 0;
+                border-bottom: 0;
+                @extend .prl;
+                @extend .ptb;
+                .profile{
+                    .profileBlock{
+                        .image{
+                            img{
+                                border-radius: 50%;
+                                width: 100%;
+                            }
+                        }
+                        .name{
+                            font-weight: $strong;
+                            font-size: $largeSize;
+                        }
+                    }
+                }
+            }
+            .files{
+                position: relative;
+                height: 100%;
+                color: $day;
+                .file{
+                    width: 110px;
+                    height: 110px;
+                    .file-item{
+                        margin: $normalSize;
+                        text-align: center;
+                    }
+                }
+                .trashBox{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    cursor: default;
+                    .icon{
+                        &:hover{
+                            transition: $transition;
+                            color: $silver;
+                        }
+                        font-size: $xxLargeSize;
+                    }
+                    .title{
+                        line-height: $lineHeight+0.5;
+                    }
+                }
+            }
+        }
+    }
+}

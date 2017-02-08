@@ -1,0 +1,339 @@
+body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
+  margin: 0;
+  padding: 0; }
+
+.button, .button-night, .button-night-reverse, .button-fire, .button-fire-reverse, .button-silver, .button-silver-reverse, .button-sky, .button-sky-reverse, .button-day, .button-day-reverse {
+  border-radius: 4px;
+  text-align: center;
+  padding: 10.66667px; }
+
+.textBox, .textBox-night, .textBox-night-reverse, .textBox-fire, .textBox-fire-reverse, .textBox-silver, .textBox-silver-reverse, .textBox-sky, .textBox-sky-reverse, .textBox-day, .textBox-day-reverse {
+  border: 0;
+  padding: 10.66667px; }
+
+.bg-transparent {
+  background-color: transparent !important; }
+
+.bg-night, .button-night, .button-night-reverse, .textBox-night, .textBox-night-reverse {
+  background-color: #000; }
+
+.text-night {
+  color: #000; }
+  .text-night a {
+    color: #1a1a1a !important; }
+    .text-night a:hoveR {
+      transition: 0.3s;
+      color: #000 !important; }
+
+.text-night-reverse {
+  color: #000; }
+  .text-night-reverse a {
+    color: black !important; }
+    .text-night-reverse a:hoveR {
+      transition: 0.3s;
+      color: #000 !important; }
+
+.button-night {
+  color: gray; }
+  .button-night:hover {
+    transition: 0.3s;
+    background-color: black; }
+
+.button-night-reverse {
+  color: black; }
+  .button-night-reverse:hover {
+    transition: 0.3s;
+    background-color: #1a1a1a; }
+
+.textBox-night {
+  color: gray; }
+
+.textBox-night-reverse {
+  color: black; }
+
+.border-night {
+  border: solid #000; }
+
+.bg-fire, .button-fire, .button-fire-reverse, .textBox-fire, .textBox-fire-reverse {
+  background-color: #e0382d; }
+
+.text-fire {
+  color: #e0382d; }
+  .text-fire a {
+    color: #e76259 !important; }
+    .text-fire a:hoveR {
+      transition: 0.3s;
+      color: #e0382d !important; }
+
+.text-fire-reverse {
+  color: #e0382d; }
+  .text-fire-reverse a {
+    color: #be261c !important; }
+    .text-fire-reverse a:hoveR {
+      transition: 0.3s;
+      color: #e0382d !important; }
+
+.button-fire {
+  color: white; }
+  .button-fire:hover {
+    transition: 0.3s;
+    background-color: #be261c; }
+
+.button-fire-reverse {
+  color: #0c0202; }
+  .button-fire-reverse:hover {
+    transition: 0.3s;
+    background-color: #e76259; }
+
+.textBox-fire {
+  color: white; }
+
+.textBox-fire-reverse {
+  color: #0c0202; }
+
+.border-fire {
+  border: solid #e0382d; }
+
+.bg-silver, .button-silver, .button-silver-reverse, .textBox-silver, .textBox-silver-reverse {
+  background-color: #e2e2e2; }
+
+.text-silver {
+  color: #e2e2e2; }
+  .text-silver a {
+    color: #fcfcfc !important; }
+    .text-silver a:hoveR {
+      transition: 0.3s;
+      color: #e2e2e2 !important; }
+
+.text-silver-reverse {
+  color: #e2e2e2; }
+  .text-silver-reverse a {
+    color: #c9c9c9 !important; }
+    .text-silver-reverse a:hoveR {
+      transition: 0.3s;
+      color: #e2e2e2 !important; }
+
+.button-silver {
+  color: white; }
+  .button-silver:hover {
+    transition: 0.3s;
+    background-color: #c9c9c9; }
+
+.button-silver-reverse {
+  color: #636363; }
+  .button-silver-reverse:hover {
+    transition: 0.3s;
+    background-color: #fcfcfc; }
+
+.textBox-silver {
+  color: white; }
+
+.textBox-silver-reverse {
+  color: #636363; }
+
+.border-silver {
+  border: solid #e2e2e2; }
+
+.bg-sky, .button-sky, .button-sky-reverse, .textBox-sky, .textBox-sky-reverse {
+  background-color: #09afe3; }
+
+.text-sky {
+  color: #09afe3; }
+  .text-sky a {
+    color: #29c5f6 !important; }
+    .text-sky a:hoveR {
+      transition: 0.3s;
+      color: #09afe3 !important; }
+
+.text-sky-reverse {
+  color: #09afe3; }
+  .text-sky-reverse a {
+    color: #0789b2 !important; }
+    .text-sky-reverse a:hoveR {
+      transition: 0.3s;
+      color: #09afe3 !important; }
+
+.button-sky {
+  color: #edfafe; }
+  .button-sky:hover {
+    transition: 0.3s;
+    background-color: #0789b2; }
+
+.button-sky-reverse {
+  color: black; }
+  .button-sky-reverse:hover {
+    transition: 0.3s;
+    background-color: #29c5f6; }
+
+.textBox-sky {
+  color: #edfafe; }
+
+.textBox-sky-reverse {
+  color: black; }
+
+.border-sky {
+  border: solid #09afe3; }
+
+.bg-day, .button-day, .button-day-reverse, .textBox-day, .textBox-day-reverse {
+  background-color: #fff; }
+
+.text-day {
+  color: #fff; }
+  .text-day a {
+    color: white !important; }
+    .text-day a:hoveR {
+      transition: 0.3s;
+      color: #fff !important; }
+
+.text-day-reverse {
+  color: #fff; }
+  .text-day-reverse a {
+    color: #e6e6e6 !important; }
+    .text-day-reverse a:hoveR {
+      transition: 0.3s;
+      color: #fff !important; }
+
+.button-day {
+  color: white; }
+  .button-day:hover {
+    transition: 0.3s;
+    background-color: #e6e6e6; }
+
+.button-day-reverse {
+  color: gray; }
+  .button-day-reverse:hover {
+    transition: 0.3s;
+    background-color: white; }
+
+.textBox-day {
+  color: white; }
+
+.textBox-day-reverse {
+  color: gray; }
+
+.border-day {
+  border: solid #fff; }
+
+.prl, body .desktop .taskBar .taskBarItems ul li .item, body .desktop .playGround .startMenu {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.ptb, body .desktop .playGround .startMenu {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+body {
+  color: #000;
+  font-family: "arial";
+  font-size: 16px;
+  line-height: 1; }
+  body ul {
+    list-style: none; }
+  body a {
+    text-decoration: none;
+    color: #000; }
+  body .fa {
+    cursor: default; }
+  body h1 {
+    font-weight: 300; }
+  body h2 {
+    font-weight: 300; }
+  body h3 {
+    font-weight: 300; }
+  body h4 {
+    font-weight: 300; }
+  body h5 {
+    font-weight: 300; }
+  body h6 {
+    font-weight: 300; }
+  body button {
+    border: 0;
+    border-radius: 4px; }
+
+body {
+  background-image: url("../images/wallpaper.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  body .desktop {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 100vh; }
+    body .desktop .taskBar {
+      position: absolute;
+      bottom: 0;
+      background-color: #000;
+      width: 100%;
+      color: #fff;
+      height: 50px;
+      border: 0;
+      font-size: 24px; }
+      body .desktop .taskBar .taskBarItems ul li {
+        cursor: default; }
+        body .desktop .taskBar .taskBarItems ul li .item {
+          height: 50px;
+          text-align: center;
+          line-height: 50px; }
+          body .desktop .taskBar .taskBarItems ul li .item:hoveR {
+            transition: 0.3s;
+            background-color: rgba(26, 26, 26, 0.8); }
+        body .desktop .taskBar .taskBarItems ul li .bars i {
+          color: coral; }
+        body .desktop .taskBar .taskBarItems ul li .ie i {
+          color: #09afe3; }
+        body .desktop .taskBar .taskBarItems ul li .folder i {
+          color: orange; }
+        body .desktop .taskBar .taskBarItems ul li .store i {
+          color: #e2e2e2; }
+      body .desktop .taskBar .taskBarItems ul:last-child li {
+        font-size: 10.66667px; }
+        body .desktop .taskBar .taskBarItems ul:last-child li:last-child .time p {
+          display: block; }
+    body .desktop .playGround {
+      position: relative;
+      display: block;
+      height: calc(100% - 50px); }
+      body .desktop .playGround .startMenu {
+        position: absolute;
+        display: none;
+        bottom: 0;
+        left: 0;
+        color: #fff;
+        width: 41.66667%;
+        min-height: 60vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        border: 1px solid rgba(9, 175, 227, 0.5);
+        border-left: 0;
+        border-bottom: 0; }
+        body .desktop .playGround .startMenu .profile .profileBlock .image img {
+          border-radius: 50%;
+          width: 100%; }
+        body .desktop .playGround .startMenu .profile .profileBlock .name {
+          font-weight: 700;
+          font-size: 24px; }
+      body .desktop .playGround .files {
+        position: relative;
+        height: 100%;
+        color: #fff; }
+        body .desktop .playGround .files .file {
+          width: 110px;
+          height: 110px; }
+          body .desktop .playGround .files .file .file-item {
+            margin: 16px;
+            text-align: center; }
+        body .desktop .playGround .files .trashBox {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          cursor: default; }
+          body .desktop .playGround .files .trashBox .icon {
+            font-size: 54px; }
+            body .desktop .playGround .files .trashBox .icon:hover {
+              transition: 0.3s;
+              color: #e2e2e2; }
+          body .desktop .playGround .files .trashBox .title {
+            line-height: 1.5; }
+
+/*# sourceMappingURL=style.css.map */
