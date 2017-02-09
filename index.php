@@ -27,6 +27,28 @@
             </div>
         </div>
         
-        
+        <script src="scripts/functions.js"></script>
+        <script src="scripts/animations.js"></script>
+        <script>
+            var file=childNodesToArray(document.getElementsByClassName("files")[0].childNodes);
+            var windows=childNodesToArray(document.getElementsByClassName("windows")[0].childNodes);
+            
+            
+            
+            file[1].addEventListener("click",function(){
+                fade(windows[1],null,0,1);
+                var exitButton=childNodesToArray(windows[1].childNodes[1].childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes);
+                exitButton[0].addEventListener("click",function(){
+                    fade(windows[1],null,1,0); 
+                });
+            });
+            file[3].addEventListener("click",function(){
+                fade(windows[0],null,0,1);
+                var exitButton=childNodesToArray(windows[0].childNodes[1].childNodes[1].childNodes[1].childNodes[3].childNodes[1].childNodes);
+                exitButton[0].addEventListener("click",function(){
+                    fade(windows[0],function(){windows[0].style.display="none"},1,0); 
+                });
+            });
+        </script>
     </body>
 </html>

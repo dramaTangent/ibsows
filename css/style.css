@@ -378,20 +378,47 @@ body {
               background-color: rgba(255, 255, 255, 0.972);
               min-height: 400px;
               padding-top: 7.11111px; }
-        body .desktop .playGround .windows .terminal .window-item .body {
-          background-color: rgba(0, 0, 0, 0.9);
-          color: #e2e2e2;
-          font-family: monospace; }
-          body .desktop .playGround .windows .terminal .window-item .body b {
-            color: #e0382d;
-            font-weight: 700; }
-          body .desktop .playGround .windows .terminal .window-item .body textarea {
-            background-color: transparent;
-            border: 0;
-            color: #fff;
-            width: 100%;
-            min-height: 400px; }
-          body .desktop .playGround .windows .terminal .window-item .body span {
-            color: #09afe3; }
+        body .desktop .playGround .windows .terminal {
+          display: none;
+          opacity: 0; }
+          body .desktop .playGround .windows .terminal .window-item .body {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #e2e2e2;
+            font-family: monospace; }
+            body .desktop .playGround .windows .terminal .window-item .body b {
+              color: #e0382d;
+              font-weight: 700; }
+            body .desktop .playGround .windows .terminal .window-item .body textarea {
+              background-color: transparent;
+              border: 0;
+              color: #fff;
+              width: 100%;
+              min-height: 400px; }
+            body .desktop .playGround .windows .terminal .window-item .body span {
+              color: #09afe3; }
+        body .desktop .playGround .windows .documents {
+          display: none;
+          opacity: 0; }
+          body .desktop .playGround .windows .documents .window-item .body ul li .item {
+            margin: 10.66667px; }
+            body .desktop .playGround .windows .documents .window-item .body ul li .item .arrows {
+              font-size: 24px; }
+              body .desktop .playGround .windows .documents .window-item .body ul li .item .arrows ul li .subLiItem {
+                margin: 4.74074px;
+                margin-top: 0; }
+              body .desktop .playGround .windows .documents .window-item .body ul li .item .arrows ul li:hover {
+                transition: 0.3s;
+                color: #636363; }
+          body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-night, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-night-reverse, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-fire, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-fire-reverse, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-silver, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-silver-reverse, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-sky, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-sky-reverse, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-day, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-day-reverse {
+            background-color: #fff;
+            border: 1px solid #e2e2e2;
+            width: calc(100% - 100%/6 - 64px); }
+          body .desktop .playGround .windows .documents .window-item .body ul .searchBar {
+            text-align: right;
+            width: 30%; }
+            body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-night, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-night-reverse, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-fire, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-fire-reverse, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-silver, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-silver-reverse, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-sky, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-sky-reverse, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-day, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-day-reverse {
+              background-color: #fff;
+              border: 1px solid #e2e2e2;
+              width: calc(100% - 100%/6 - 32px); }
 
 /*# sourceMappingURL=style.css.map */

@@ -193,6 +193,8 @@ body{
                     }
                 }
                 .terminal{
+                    display: none;
+                    opacity: 0;
                     .window-item{
                         .body{
                             background-color: rgba($night,$opacity);
@@ -212,6 +214,52 @@ body{
                             span{
                                 color: $sky;
                            }
+                        }
+                    }
+                }
+                .documents{
+                    display: none;
+                    opacity: 0;
+                    .window-item{
+                        .body{
+                            ul{
+                                li{
+                                    .item{
+                                        margin: $smallSize;
+                                        .arrows{
+                                            font-size: $largeSize;
+                                            ul{
+                                                li{
+                                                    .subLiItem{
+                                                        margin: $xxSmallSize;
+                                                        margin-top: 0;
+                                                    }
+                                                    &:hover{
+                                                        transition: $transition;
+                                                        color:darken($silver,50%);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .urlBar{
+                                    .textBox{
+                                        background-color: $day;
+                                        border: 1px solid $silver;
+                                        width: calc(100% - 100%/6 - 64px);
+                                    }
+                                }
+                                .searchBar{
+                                    .textBox{
+                                        background-color: $day;
+                                        border: 1px solid $silver;
+                                        width: calc(100% - 100%/6 - 32px);
+                                    }
+                                    text-align: right;
+                                    width: 30%;
+                                }
+                            }
                         }
                     }
                 }
