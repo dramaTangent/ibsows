@@ -2,19 +2,10 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
   margin: 0;
   padding: 0; }
 
-.button, .button-night, .button-night-reverse, .button-fire, .button-fire-reverse, .button-silver, .button-silver-reverse, .button-sky, .button-sky-reverse, .button-day, .button-day-reverse {
-  border-radius: 4px;
-  text-align: center;
-  padding: 10.66667px; }
-
-.textBox, .textBox-night, .textBox-night-reverse, .textBox-fire, .textBox-fire-reverse, .textBox-silver, .textBox-silver-reverse, .textBox-sky, .textBox-sky-reverse, .textBox-day, .textBox-day-reverse {
-  border: 0;
-  padding: 10.66667px; }
-
 .bg-transparent {
   background-color: transparent !important; }
 
-.bg-night, .button-night, .button-night-reverse, .textBox-night, .textBox-night-reverse {
+.bg-night {
   background-color: #000; }
 
 .text-night {
@@ -33,28 +24,7 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
       transition: 0.3s;
       color: #000 !important; }
 
-.button-night {
-  color: gray; }
-  .button-night:hover {
-    transition: 0.3s;
-    background-color: black; }
-
-.button-night-reverse {
-  color: black; }
-  .button-night-reverse:hover {
-    transition: 0.3s;
-    background-color: #1a1a1a; }
-
-.textBox-night {
-  color: gray; }
-
-.textBox-night-reverse {
-  color: black; }
-
-.border-night {
-  border: solid #000; }
-
-.bg-fire, .button-fire, .button-fire-reverse, .textBox-fire, .textBox-fire-reverse {
+.bg-fire {
   background-color: #e0382d; }
 
 .text-fire {
@@ -73,28 +43,7 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
       transition: 0.3s;
       color: #e0382d !important; }
 
-.button-fire {
-  color: white; }
-  .button-fire:hover {
-    transition: 0.3s;
-    background-color: #be261c; }
-
-.button-fire-reverse {
-  color: #0c0202; }
-  .button-fire-reverse:hover {
-    transition: 0.3s;
-    background-color: #e76259; }
-
-.textBox-fire {
-  color: white; }
-
-.textBox-fire-reverse {
-  color: #0c0202; }
-
-.border-fire {
-  border: solid #e0382d; }
-
-.bg-silver, .button-silver, .button-silver-reverse, .textBox-silver, .textBox-silver-reverse {
+.bg-silver {
   background-color: #e2e2e2; }
 
 .text-silver {
@@ -113,28 +62,7 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
       transition: 0.3s;
       color: #e2e2e2 !important; }
 
-.button-silver {
-  color: white; }
-  .button-silver:hover {
-    transition: 0.3s;
-    background-color: #c9c9c9; }
-
-.button-silver-reverse {
-  color: #636363; }
-  .button-silver-reverse:hover {
-    transition: 0.3s;
-    background-color: #fcfcfc; }
-
-.textBox-silver {
-  color: white; }
-
-.textBox-silver-reverse {
-  color: #636363; }
-
-.border-silver {
-  border: solid #e2e2e2; }
-
-.bg-sky, .button-sky, .button-sky-reverse, .textBox-sky, .textBox-sky-reverse {
+.bg-sky {
   background-color: #09afe3; }
 
 .text-sky {
@@ -153,28 +81,7 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
       transition: 0.3s;
       color: #09afe3 !important; }
 
-.button-sky {
-  color: #edfafe; }
-  .button-sky:hover {
-    transition: 0.3s;
-    background-color: #0789b2; }
-
-.button-sky-reverse {
-  color: black; }
-  .button-sky-reverse:hover {
-    transition: 0.3s;
-    background-color: #29c5f6; }
-
-.textBox-sky {
-  color: #edfafe; }
-
-.textBox-sky-reverse {
-  color: black; }
-
-.border-sky {
-  border: solid #09afe3; }
-
-.bg-day, .button-day, .button-day-reverse, .textBox-day, .textBox-day-reverse {
+.bg-day {
   background-color: #fff; }
 
 .text-day {
@@ -193,44 +100,23 @@ body, body ul, body h1, body h2, body h3, body h4, body h5, body h6, body p {
       transition: 0.3s;
       color: #fff !important; }
 
-.button-day {
-  color: white; }
-  .button-day:hover {
-    transition: 0.3s;
-    background-color: #e6e6e6; }
-
-.button-day-reverse {
-  color: gray; }
-  .button-day-reverse:hover {
-    transition: 0.3s;
-    background-color: white; }
-
-.textBox-day {
-  color: white; }
-
-.textBox-day-reverse {
-  color: gray; }
-
-.border-day {
-  border: solid #fff; }
-
-.prl, body .desktop .taskBar .taskBarItems ul li .item, body .desktop .playGround .startMenu, body .desktop .playGround .windows .window .window-item .top {
+.prl, body .desktop .taskBar .taskBarItems ul li .item, body .desktop .playGround .startMenu, body .desktop .playGround .windows .window .window-item .top .logo, body .desktop .playGround .windows .window .window-item .top .windowsActions, body .desktop .playGround .windows .window .window-item .body .topMenu ul li .item, body .desktop .playGround .windows .window .window-item .body .topMenu ul li .dropMenuContent ul li, body .desktop .playGround .windows .window .window-item .body .topMenu ul li .dropMenuContent ul li a, body .desktop .playGround .windows .window .window-item .body .navigation ul .arrows ul {
   padding-left: 15px;
   padding-right: 15px; }
 
-.ptb, body .desktop .playGround .startMenu {
+.ptb, body .desktop .playGround .startMenu, body .desktop .playGround .underWindow .keyboard .board ul li .key {
   padding-top: 15px;
   padding-bottom: 15px; }
 
-.fileStyle, body .desktop .playGround .files .trashBox, body .desktop .playGround .files .documents, body .desktop .playGround .files .control, body .desktop .playGround .files .terminal {
+.fileStyle, body .desktop .playGround .files .documents, body .desktop .playGround .gadFiles .documents, body .desktop .playGround .files .control, body .desktop .playGround .gadFiles .control, body .desktop .playGround .files .terminal, body .desktop .playGround .gadFiles .terminal, body .desktop .playGround .files .notes, body .desktop .playGround .gadFiles .notes, body .desktop .playGround .files .trashBox, body .desktop .playGround .gadFiles .trashBox, body .desktop .playGround .gadFiles .file {
   position: absolute;
   cursor: default; }
-  .fileStyle .icon, body .desktop .playGround .files .trashBox .icon, body .desktop .playGround .files .documents .icon, body .desktop .playGround .files .control .icon, body .desktop .playGround .files .terminal .icon {
+  .fileStyle .icon, body .desktop .playGround .files .documents .icon, body .desktop .playGround .gadFiles .documents .icon, body .desktop .playGround .files .control .icon, body .desktop .playGround .gadFiles .control .icon, body .desktop .playGround .files .terminal .icon, body .desktop .playGround .gadFiles .terminal .icon, body .desktop .playGround .files .notes .icon, body .desktop .playGround .gadFiles .notes .icon, body .desktop .playGround .files .trashBox .icon, body .desktop .playGround .gadFiles .trashBox .icon, body .desktop .playGround .gadFiles .file .icon {
     font-size: 54px; }
-    .fileStyle .icon:hover, body .desktop .playGround .files .trashBox .icon:hover, body .desktop .playGround .files .documents .icon:hover, body .desktop .playGround .files .control .icon:hover, body .desktop .playGround .files .terminal .icon:hover {
+    .fileStyle .icon:hover, body .desktop .playGround .files .documents .icon:hover, body .desktop .playGround .gadFiles .documents .icon:hover, body .desktop .playGround .files .control .icon:hover, body .desktop .playGround .gadFiles .control .icon:hover, body .desktop .playGround .files .terminal .icon:hover, body .desktop .playGround .gadFiles .terminal .icon:hover, body .desktop .playGround .files .notes .icon:hover, body .desktop .playGround .gadFiles .notes .icon:hover, body .desktop .playGround .files .trashBox .icon:hover, body .desktop .playGround .gadFiles .trashBox .icon:hover, body .desktop .playGround .gadFiles .file .icon:hover {
       transition: 0.3s;
       color: #e2e2e2; }
-  .fileStyle .title, body .desktop .playGround .files .trashBox .title, body .desktop .playGround .files .documents .title, body .desktop .playGround .files .control .title, body .desktop .playGround .files .terminal .title {
+  .fileStyle .title, body .desktop .playGround .files .documents .title, body .desktop .playGround .gadFiles .documents .title, body .desktop .playGround .files .control .title, body .desktop .playGround .gadFiles .control .title, body .desktop .playGround .files .terminal .title, body .desktop .playGround .gadFiles .terminal .title, body .desktop .playGround .files .notes .title, body .desktop .playGround .gadFiles .notes .title, body .desktop .playGround .files .trashBox .title, body .desktop .playGround .gadFiles .trashBox .title, body .desktop .playGround .gadFiles .file .title {
     line-height: 1.5; }
 
 body {
@@ -262,7 +148,7 @@ body {
     border-radius: 4px; }
 
 body {
-  background-image: url("../images/wallpaper.png");
+  background-image: url("../images/bg.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -273,6 +159,7 @@ body {
     overflow: hidden;
     height: 100vh; }
     body .desktop .taskBar {
+      z-index: 100;
       position: absolute;
       bottom: 0;
       background-color: #000;
@@ -283,20 +170,18 @@ body {
       font-size: 24px; }
       body .desktop .taskBar .taskBarItems ul li {
         cursor: default; }
-        body .desktop .taskBar .taskBarItems ul li .item {
+        body .desktop .taskBar .taskBarItems ul li .item, body .desktop .taskBar .taskBarItems .playGround .windows .window .window-item .body .topMenu ul li .dropMenuContent ul li, body .desktop .playGround .windows .window .window-item .body .topMenu .taskBar .taskBarItems ul li .dropMenuContent ul li {
           height: 50px;
           text-align: center;
           line-height: 50px; }
-          body .desktop .taskBar .taskBarItems ul li .item:hoveR {
+          body .desktop .taskBar .taskBarItems ul li .item:hoveR, body .desktop .taskBar .taskBarItems .playGround .windows .window .window-item .body .topMenu ul li .dropMenuContent ul li:hoveR, body .desktop .playGround .windows .window .window-item .body .topMenu .taskBar .taskBarItems ul li .dropMenuContent ul li:hoveR {
             transition: 0.3s;
             background-color: rgba(26, 26, 26, 0.8); }
         body .desktop .taskBar .taskBarItems ul li .bars i {
-          color: coral; }
+          color: #9a9a30; }
         body .desktop .taskBar .taskBarItems ul li .ie i {
           color: #09afe3; }
-        body .desktop .taskBar .taskBarItems ul li .folder i {
-          color: orange; }
-        body .desktop .taskBar .taskBarItems ul li .store i {
+        body .desktop .taskBar .taskBarItems ul li .documents i {
           color: #e2e2e2; }
       body .desktop .taskBar .taskBarItems ul:last-child li {
         font-size: 10.66667px; }
@@ -315,7 +200,7 @@ body {
         color: #fff;
         width: 41.66667%;
         min-height: 60vh;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.972);
         border: 1px solid rgba(9, 175, 227, 0.5);
         border-left: 0;
         border-bottom: 0; }
@@ -325,100 +210,222 @@ body {
         body .desktop .playGround .startMenu .profile .profileBlock .name {
           font-weight: 700;
           font-size: 24px; }
-      body .desktop .playGround .files {
+      body .desktop .playGround .files, body .desktop .playGround .gadFiles {
         position: relative;
         height: 100%;
         color: #fff;
-        z-index: 1; }
-        body .desktop .playGround .files .file {
+        width: calc(100% - 120px*2);
+        float: left; }
+        body .desktop .playGround .files .file, body .desktop .playGround .gadFiles .file {
           width: 120px;
           height: 120px; }
-          body .desktop .playGround .files .file .file-item {
+          body .desktop .playGround .files .file .file-item, body .desktop .playGround .gadFiles .file .file-item {
             margin: 16px;
             text-align: center; }
-        body .desktop .playGround .files .trashBox {
-          bottom: 0;
-          right: 0; }
-        body .desktop .playGround .files .documents {
+        body .desktop .playGround .files .documents, body .desktop .playGround .gadFiles .documents {
           top: 0;
           left: 0; }
-        body .desktop .playGround .files .control {
+        body .desktop .playGround .files .control, body .desktop .playGround .gadFiles .control {
           top: 120px;
           left: 0; }
-        body .desktop .playGround .files .terminal {
+        body .desktop .playGround .files .terminal, body .desktop .playGround .gadFiles .terminal {
           top: calc(2* 120px);
           left: 0; }
+        body .desktop .playGround .files .notes, body .desktop .playGround .gadFiles .notes {
+          top: calc(3*120px);
+          left: 0; }
+        body .desktop .playGround .files .trashBox, body .desktop .playGround .gadFiles .trashBox {
+          right: 0;
+          bottom: 0; }
+      body .desktop .playGround .gadFiles {
+        background-color: rgba(9, 175, 227, 0.648);
+        width: 240px;
+        float: right; }
+        body .desktop .playGround .gadFiles .file {
+          z-index: 2; }
+        body .desktop .playGround .gadFiles .tasks {
+          background-color: rgba(9, 175, 227, 0.972);
+          top: 0;
+          width: 240px; }
+        body .desktop .playGround .gadFiles .settings {
+          background-color: rgba(224, 56, 45, 0.972);
+          top: 120px; }
+        body .desktop .playGround .gadFiles .profile {
+          top: 120px;
+          left: 120px;
+          background-color: rgba(0, 204, 105, 0.972); }
+        body .desktop .playGround .gadFiles .player {
+          top: 240px;
+          width: 240px;
+          background-color: rgba(107, 105, 214, 0.972); }
+        body .desktop .playGround .gadFiles .youtube {
+          top: 360px;
+          left: 0;
+          color: #000;
+          background-color: rgba(217, 217, 217, 0.972); }
+          body .desktop .playGround .gadFiles .youtube .icon {
+            color: #e0382d; }
+            body .desktop .playGround .gadFiles .youtube .icon:hover {
+              transition: 0.3s;
+              color: #921d15; }
+        body .desktop .playGround .gadFiles .calendar {
+          background-color: rgba(172, 25, 61, 0.972);
+          top: 360px;
+          right: 0; }
+        body .desktop .playGround .gadFiles .clock {
+          width: 240px;
+          top: 480px;
+          z-index: 1; }
+        body .desktop .playGround .gadFiles .mail {
+          top: 600px;
+          width: 240px; }
       body .desktop .playGround .windows {
+        display: none;
         z-index: 3;
         position: absolute;
         top: 0;
-        right: 0;
-        width: calc(100% - 120px*2); }
+        right: calc(2*120px);
+        width: calc(100% - 120px*4); }
         body .desktop .playGround .windows .window {
-          width: 80%;
-          height: 600px; }
+          position: absolute;
+          width: 100%;
+          min-height: 100%; }
           body .desktop .playGround .windows .window .window-item {
             margin: 24px; }
             body .desktop .playGround .windows .window .window-item .top {
               background-color: #09afe3;
               color: #fff;
-              height: 35px;
-              line-height: 35px;
+              height: 30px;
+              line-height: 30px;
               cursor: default; }
               body .desktop .playGround .windows .window .window-item .top .logo {
-                text-align: left; }
-              body .desktop .playGround .windows .window .window-item .top .text {
-                text-align: center; }
-              body .desktop .playGround .windows .window .window-item .top .windowsActions {
-                text-align: right; }
-                body .desktop .playGround .windows .window .window-item .top .windowsActions:hoveR {
+                float: left;
+                text-align: left;
+                width: 2%; }
+                body .desktop .playGround .windows .window .window-item .top .logo:hover {
                   transition: 0.3s;
-                  color: #e0382d; }
+                  color: #e2e2e2; }
+              body .desktop .playGround .windows .window .window-item .top .name {
+                text-align: center;
+                width: calc(100% - 12% - 4*15px); }
+              body .desktop .playGround .windows .window .window-item .top .windowsActions {
+                text-align: right;
+                width: 10%;
+                float: right; }
+                body .desktop .playGround .windows .window .window-item .top .windowsActions ul li {
+                  padding-left: 15px; }
+                  body .desktop .playGround .windows .window .window-item .top .windowsActions ul li:hoveR {
+                    transition: 0.3s;
+                    color: #e0382d; }
             body .desktop .playGround .windows .window .window-item .body {
               background-color: rgba(255, 255, 255, 0.972);
-              min-height: 400px;
-              padding-top: 7.11111px; }
-        body .desktop .playGround .windows .terminal {
-          display: none;
-          opacity: 0; }
-          body .desktop .playGround .windows .terminal .window-item .body {
-            background-color: rgba(0, 0, 0, 0.9);
-            color: #e2e2e2;
-            font-family: monospace; }
-            body .desktop .playGround .windows .terminal .window-item .body b {
-              color: #e0382d;
-              font-weight: 700; }
-            body .desktop .playGround .windows .terminal .window-item .body textarea {
-              background-color: transparent;
-              border: 0;
-              color: #fff;
-              width: 100%;
-              min-height: 400px; }
-            body .desktop .playGround .windows .terminal .window-item .body span {
-              color: #09afe3; }
+              height: 500px;
+              position: relative; }
+              body .desktop .playGround .windows .window .window-item .body .topMenu ul {
+                height: 30px;
+                background-color: #fff;
+                cursor: default;
+                border-bottom: 1px solid rgba(226, 226, 226, 0.5); }
+                body .desktop .playGround .windows .window .window-item .body .topMenu ul li .item, body .desktop .playGround .windows .window .window-item .body .topMenu ul li .dropMenuContent ul li {
+                  line-height: 30px;
+                  color: #056381;
+                  display: block; }
+                  body .desktop .playGround .windows .window .window-item .body .topMenu ul li .item:hoveR, body .desktop .playGround .windows .window .window-item .body .topMenu ul li .dropMenuContent ul li:hoveR {
+                    transition: 0.3s;
+                    color: #fff;
+                    background-color: #09afe3; }
+                  body .desktop .playGround .windows .window .window-item .body .topMenu ul li .item:hover + .dropMenuContent, body .desktop .playGround .windows .window .window-item .body .topMenu ul li .dropMenuContent ul li:hover + .dropMenuContent {
+                    transition: 0.3s;
+                    display: block; }
+                body .desktop .playGround .windows .window .window-item .body .topMenu ul li .dropMenuContent {
+                  position: absolute;
+                  display: none;
+                  background-color: rgba(255, 255, 255, 0.972); }
+                  body .desktop .playGround .windows .window .window-item .body .topMenu ul li .dropMenuContent ul {
+                    cursor: auto;
+                    height: auto;
+                    border: 0; }
+                    body .desktop .playGround .windows .window .window-item .body .topMenu ul li .dropMenuContent ul .bb, body .desktop .playGround .windows .window .window-item .body .topMenu ul li .dropMenuContent ul li:last-child {
+                      border-bottom: 1px solid rgba(226, 226, 226, 0.5); }
+                    body .desktop .playGround .windows .window .window-item .body .topMenu ul li .dropMenuContent ul li {
+                      display: block;
+                      border-right: 1px solid rgba(226, 226, 226, 0.5); }
+                      body .desktop .playGround .windows .window .window-item .body .topMenu ul li .dropMenuContent ul li a {
+                        display: block;
+                        color: inherit; }
+                        body .desktop .playGround .windows .window .window-item .body .topMenu ul li .dropMenuContent ul li a:hoveR {
+                          transition: 0.3s;
+                          color: #fff;
+                          background-color: #09afe3; }
+              body .desktop .playGround .windows .window .window-item .body .navigation {
+                height: 30px; }
+                body .desktop .playGround .windows .window .window-item .body .navigation ul li {
+                  line-height: 30px; }
+                body .desktop .playGround .windows .window .window-item .body .navigation ul .arrows {
+                  float: left;
+                  font-size: 24px;
+                  text-align: center; }
+                  body .desktop .playGround .windows .window .window-item .body .navigation ul .arrows ul li {
+                    padding-right: 15px; }
+                    body .desktop .playGround .windows .window .window-item .body .navigation ul .arrows ul li:last-child {
+                      padding: 0; }
+                    body .desktop .playGround .windows .window .window-item .body .navigation ul .arrows ul li:hover {
+                      transition: 0.3s;
+                      color: #333333; }
         body .desktop .playGround .windows .documents {
+          display: none; }
+        body .desktop .playGround .windows .notes {
+          display: block; }
+          body .desktop .playGround .windows .notes .window-item .body .content {
+            height: calc(100% - 30px); }
+            body .desktop .playGround .windows .notes .window-item .body .content textarea {
+              padding: 4px;
+              border: 0;
+              background: transparent;
+              margin-top: -1px;
+              width: calc(100% - 8px);
+              height: calc(100% - 9px);
+              overflow-y: scroll;
+              resize: none; }
+      body .desktop .playGround .underWindow {
+        display: none;
+        position: relative;
+        width: calc(100% - 120px*4);
+        left: calc(2*120px);
+        top: calc(100% - 120px*2.1);
+        height: 35%; }
+        body .desktop .playGround .underWindow .underItem {
+          height: 100%; }
+        body .desktop .playGround .underWindow .keyboard {
           display: none;
-          opacity: 0; }
-          body .desktop .playGround .windows .documents .window-item .body ul li .item {
-            margin: 10.66667px; }
-            body .desktop .playGround .windows .documents .window-item .body ul li .item .arrows {
-              font-size: 24px; }
-              body .desktop .playGround .windows .documents .window-item .body ul li .item .arrows ul li .subLiItem {
-                margin: 4.74074px;
-                margin-top: 0; }
-              body .desktop .playGround .windows .documents .window-item .body ul li .item .arrows ul li:hover {
-                transition: 0.3s;
-                color: #636363; }
-          body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-night, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-night-reverse, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-fire, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-fire-reverse, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-silver, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-silver-reverse, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-sky, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-sky-reverse, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-day, body .desktop .playGround .windows .documents .window-item .body ul .urlBar .textBox-day-reverse {
-            background-color: #fff;
-            border: 1px solid #e2e2e2;
-            width: calc(100% - 100%/6 - 64px); }
-          body .desktop .playGround .windows .documents .window-item .body ul .searchBar {
-            text-align: right;
-            width: 30%; }
-            body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-night, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-night-reverse, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-fire, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-fire-reverse, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-silver, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-silver-reverse, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-sky, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-sky-reverse, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-day, body .desktop .playGround .windows .documents .window-item .body ul .searchBar .textBox-day-reverse {
-              background-color: #fff;
-              border: 1px solid #e2e2e2;
-              width: calc(100% - 100%/6 - 32px); }
+          position: absolute;
+          z-index: 10;
+          width: 100%; }
+          body .desktop .playGround .underWindow .keyboard .board {
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); }
+            body .desktop .playGround .underWindow .keyboard .board ul {
+              height: 100%; }
+              body .desktop .playGround .underWindow .keyboard .board ul li {
+                color: #fff;
+                cursor: default;
+                width: 6.66667%;
+                text-align: center; }
+                body .desktop .playGround .underWindow .keyboard .board ul li .key {
+                  background-color: rgba(0, 0, 0, 0.81);
+                  display: block;
+                  margin: 2.107px;
+                  height: calc(20% - 15px*2); }
+                  body .desktop .playGround .underWindow .keyboard .board ul li .key:hover {
+                    transition: 0.3s;
+                    background-color: black; }
+                body .desktop .playGround .underWindow .keyboard .board ul li .tab {
+                  width: calc(200% - 2*2.107px); }
+                body .desktop .playGround .underWindow .keyboard .board ul li .enter {
+                  width: calc(200% - 2*2.107px); }
+                body .desktop .playGround .underWindow .keyboard .board ul li .nonekey {
+                  display: none; }
+                body .desktop .playGround .underWindow .keyboard .board ul li .space {
+                  width: calc(500% - 2*2.107px); }
 
 /*# sourceMappingURL=style.css.map */

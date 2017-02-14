@@ -1,81 +1,186 @@
-<div class="window terminal">
-    <div class="window-item">
-        <div class="top">
-            <ul class="display-list-inline-block grid-list-4">
-                <li>
-                    <div class="logo item">
-                        <i class="fa fa-terminal" aria-hidden="true"></i>
-                    </div>
-                
-                <li>
-                    <div class="text item">
-                        Command Prompt
-                    </div>
-                
-                <li>
-                    <div class="item windowsActions">
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                    </div>
-                
-            </ul>
-        </div>
-        <div class="body">
-            <b>root@Arc</b>:<span>~</span>#
-        </div>
-    </div>
-</div>
 <div class="window documents">
     <div class="window-item">
         <div class="top">
-            <ul class="display-list-inline-block grid-list-4">
-                <li>
-                    <div class="logo item">
-                        <i class="fa fa-file-text" aria-hidden="true"></i>
-                    </div>
-                <li>
-                    <div class="text item">
-                        My Documents
-                    </div>
-                <li>
-                    <div class="item windowsActions">
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                    </div>
+            <ul class="display-list-inline-block">
+                <li class="logo">
+                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                </li>
+                <li class="name">
+                    My Documents
+                </li>
+                <li class="windowsActions">
+                    <ul class="display-list-inline-block">
+                        <li><i class="fa fa-window-minimize" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-times" aria-hidden="true"></i></li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="body">
-            <div class="navigation">
-                <ul class="display-list-inline-block">
+            <div class="topMenu">
+                <ul class="display-list-inline-block ">
                     <li>
                         <div class="item">
-                            <div class="arrows">
-                                <ul class="display-list-line-block">
-                                    <li>
-                                        <div class="subLiItem">
-                                            <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="subLiItem">
-                                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                            File
+                        </div>
+                        <div class="dropMenuContent grid-3">
+                            <ul>
+                                <li><a href="#">New</a></li>
+                                <li><a href="#">Open</a></li>
+                                <li><a href="#">Save</a></li>
+                                <li class="bb"><a href="#">Save As</a></li>
+                                <li><a href="#">Page Setups</a></li>
+                                <li class="bb"><a href="#">Print</a></li>
+                                <li><a href="#">Exit</a></li>
+                            </ul>
+                        </div>
+                    <li>
+                        <div class="item">
+                            Edit
+                        </div>
+                        
+                        <div class="dropMenuContent grid-3">
+                            <ul>
+                                <li class="bb"><a href="#">Undo</a></li>
+                                <li><a href="#">Cut</a></li>
+                                <li><a href="#">Copy</a></li>
+                                <li class="bb"><a href="#">Paste</a></li>
+                                <li class="bb"><a href="#">Delete</a></li>
+                                <li><a href="#">Find</a></li>
+                                <li><a href="#">Find Next</a></li>
+                                <li><a href="#">Repace</a></li>
+                                <li class="bb"><a href="#">Go To...</a></li>
+                                <li><a href="#">Select All</a></li>
+                            </ul>
+                        </div>
+                    <li>
+                        <div class="item">
+                            View
+                        </div>
+                        
+                        <div class="dropMenuContent grid-3">
+                            <ul>
+                                <li><a href="#">Word Wrap</a></li>
+                                <li><a href="#">Font</a></li>
+                            </ul>
+                        </div>
+                    <li>
+                        <div class="item">
+                            Favourites
+                        </div>
+                    <li>
+                        <div class="item">
+                            Tools
+                        </div>
+                    <li>
+                        <div class="item">
+                            Help
+                        </div>
+                    
+                </ul>
+            </div>
+            <div class="navigation">
+                <ul class="display-list-inline-block">
+                    <li class="arrows">
+                        <div class="item">
+                            <ul clas="display-list-inline-block">
+                                <li><i class="fa fa-arrow-left" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="urlBar grid-7">
-                        <div class="item">
-                            <input type="text grid-12 display-inline" name="windowLocationBox" class="grid-7-large textBox" placeholder="/home">
-                            <button class="display-inline grid-2 button-silver" name="goLocationButton">GO</button>
-                        </div>
-                    </li>
-                    <li class="searchBar">
-                        <div class="item">
-                            <input type="text grid-12 display-inline" name="windowLocationBox" class="grid-7-large textBox" placeholder="Search anything">
-                            <button class="display-inline grid-2 button-silver" name="goLocationButton">GO</button>
-                        </div>
+                    <li class="textBoxes">
+                        <ul class="display-list-inline-block">
+                            
+                        </ul>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="window notes">
+    <div class="window-item">
+        <div class="top">
+            <ul class="display-list-inline-block">
+                <li class="logo">
+                    <i class="fa fa-sticky-note" aria-hidden="true"></i>
+                </li>
+                <li class="name">
+                    Notes
+                </li>
+                <li class="windowsActions">
+                    <ul class="display-list-inline-block">
+                        <li><i class="fa fa-window-minimize" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-times" aria-hidden="true"></i></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="body">
+            <div class="topMenu">
+                <ul class="display-list-inline-block ">
+                    <li>
+                        <div class="item">
+                            File
+                        </div>
+                        <div class="dropMenuContent grid-3">
+                            <ul>
+                                <li><a href="#">New</a></li>
+                                <li><a href="#">Open</a></li>
+                                <li><a href="#">Save</a></li>
+                                <li class="bb"><a href="#">Save As</a></li>
+                                <li><a href="#">Page Setups</a></li>
+                                <li class="bb"><a href="#">Print</a></li>
+                                <li><a href="#">Exit</a></li>
+                            </ul>
+                        </div>
+                    <li>
+                        <div class="item">
+                            Home
+                        </div>
+                        
+                        <div class="dropMenuContent grid-3">
+                            <ul>
+                                <li class="bb"><a href="#">Undo</a></li>
+                                <li><a href="#">Cut</a></li>
+                                <li><a href="#">Copy</a></li>
+                                <li class="bb"><a href="#">Paste</a></li>
+                                <li class="bb"><a href="#">Delete</a></li>
+                                <li><a href="#">Find</a></li>
+                                <li><a href="#">Find Next</a></li>
+                                <li><a href="#">Repace</a></li>
+                                <li class="bb"><a href="#">Go To...</a></li>
+                                <li><a href="#">Select All</a></li>
+                            </ul>
+                        </div>
+                    <li>
+                        <div class="item">
+                            Format
+                        </div>
+                        
+                        <div class="dropMenuContent grid-3">
+                            <ul>
+                                <li><a href="#">Word Wrap</a></li>
+                                <li><a href="#">Font</a></li>
+                            </ul>
+                        </div>
+                    <li>
+                        <div class="item">
+                            View
+                        </div>
+                    <li>
+                        <div class="item">
+                            Help
+                        </div>
+                    
+                </ul>
+            </div>
+            <div class="content">
+                <textarea placeholder="Your Notes Here"></textarea>
             </div>
         </div>
     </div>

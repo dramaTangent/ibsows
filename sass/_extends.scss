@@ -4,15 +4,6 @@
     margin: 0;
     padding: 0;
 }
-.button{
-    border-radius: $radius;
-    text-align: center;
-    padding: $smallSize;
-}
-.textBox{
-    border: 0;
-    padding: $smallSize;
-}
 .bg-transparent{
     background-color: transparent !important;
 }
@@ -26,42 +17,18 @@
     .text-#{$name}-reverse{
         @include text-reversation($style,false);
     }
-    .button-#{$name}{
-        @extend .button;
-        @extend .bg-#{$name};
-        @include button-reversation($style,true);
-    }
-    .button-#{$name}-reverse{
-        @extend .button;
-        @extend .bg-#{$name};
-        @include button-reversation($style,false);
-    }
-    .textBox-#{$name}{
-        @extend .textBox;
-        color: lighten($style,50%);
-        @extend .bg-#{$name};
-    }
-    .textBox-#{$name}-reverse{
-        @extend .textBox;
-        color: darken($style,50%);
-        @extend .bg-#{$name};
-    }
-    .border-#{$name}{
-        border:solid $style; 
-    }
 }
-
-
-
 
 
 .prl{
-    padding-left: 15px;
-    padding-right: 15px;
+    $prl:15px !global;
+    padding-left: $prl;
+    padding-right: $prl;
 }
 .ptb{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    $ptb:15px !global;
+    padding-top: $ptb;
+    padding-bottom: $ptb;
 }
 
 .fileStyle{

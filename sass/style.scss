@@ -2,7 +2,7 @@
 @import "imports.scss";
 
 body{
-    background-image: url("../images/wallpaper.png");
+    background-image: url("../images/bg.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,6 +15,7 @@ body{
         height: 100vh;
     
         .taskBar{
+            z-index: 100;
             position: absolute;
             bottom: 0;
             $taskBarColor:$night;
@@ -41,7 +42,7 @@ body{
                         }
                         .bars{
                             i{
-                                color: coral;
+                                color: #9a9a30;
                             }
                         }
                         .ie{
@@ -49,12 +50,7 @@ body{
                                 color: $sky;
                             }
                         }
-                        .folder{
-                            i{
-                                color: orange;
-                            }
-                        }
-                        .store{
+                        .documents{
                             i{
                                 color: $silver;
                             }
@@ -118,20 +114,17 @@ body{
                 position: relative;
                 height: 100%;
                 color: $day;
-                z-index: 1;
+                $fileSize:120px !global;
+                $fileHeight:120px !global;
+                width: calc(100% - #{$fileSize}*2);
+                float: left;
                 .file{
-                    $fileSize:120px !global;
                     width: $fileSize;
-                    height: $fileSize;
+                    height: $fileHeight;
                     .file-item{
                         margin: $normalSize;
                         text-align: center;
                     }
-                }
-                .trashBox{
-                    bottom: 0;
-                    right: 0;
-                    @extend .fileStyle;
                 }
                 .documents{
                     top: 0;
@@ -139,125 +132,304 @@ body{
                     @extend .fileStyle;
                 }
                 .control{
-                    top: $fileSize;
+                    top: $fileHeight;
                     left: 0;
                     @extend .fileStyle;
                 }
                 .terminal{
-                    top: calc(2* #{$fileSize});
+                    top: calc(2* #{$fileHeight});
                     left: 0;
                     @extend .fileStyle;
                 }
+                .notes{
+                    top: calc(3*#{$fileHeight});
+                    left: 0;
+                    @extend .fileStyle;
+                }
+                .trashBox{
+                    right: 0;
+                    bottom: 0;
+                    @extend .fileStyle;
+                }
+            }
+            .gadFiles{
+                @extend .files;
+                $gradFileHeight:20vh;
+                background-color: rgba($sky,$opacity/1.5);
+                width: 2*$fileSize;
+                float: right;
+                .file{
+                    @extend .fileStyle;
+                    z-index: 2;
+                }
+                .tasks{
+                    background-color: rgba($sky,$opacity);
+                    top: 0;
+                    width: $fileSize*2;
+                }
+                .settings{
+                    background-color: rgba($fire,$opacity);
+                    top: $fileHeight;
+                }
+                .profile{
+                    top: $fileHeight;
+                    left: $fileSize;
+                    background-color: rgba(#00cc69,$opacity);
+                }
+                .player{
+                    top: $fileHeight*2;
+                    width: $fileSize*2;
+                    background-color: rgba(#6b69d6,$opacity);
+                }
+                .youtube{
+                    top: $fileHeight*3;
+                    left: 0;
+                    color: $night;
+                    background-color: rgba(darken(#e6e6e6,5%),$opacity);
+                    .icon{
+                        color: $fire;
+                        &:hover{
+                            transition: $transition;
+                            color: darken($fire,20%);
+                        }
+                    }
+                }
+                .calendar{
+                    background-color: rgba(#ac193d,$opacity);
+                    top: $fileHeight*3;
+                    right: 0;
+                }
+                .clock{
+                    width: 2*$fileSize;
+                    top: $fileHeight*4;
+                    z-index: 1;
+                }
+                .mail{
+                    top: $fileHeight*5;
+                    width: $fileSize*2;
+                }
             }
             .windows{
+                display: none;
+                $parentWindowWidth:calc(100% - #{$fileSize}*4) !global;
+                $parentWindowHeight:calc(100% - #{$fileSize}*2) !global;
+                $parentWindowRight:calc(2*#{$fileSize}) !global;
                 z-index: 3;
                 position: absolute;
                 top: 0;
-                right: 0;
-                width: calc(100% - #{$fileSize}*2);
+                right: $parentWindowRight;
+                width:$parentWindowWidth;
                 .window{
-                    $windowWidth:80%;
-                    $windowHeight:600px;
+                    position: absolute;
+                    $windowWidth:100%;
+                    $windowHeight:100%;
                     width: $windowWidth;
-                    height: $windowHeight;
+                    min-height: $windowHeight;
                     .window-item{
                         margin: $largeSize;
                         .top{
                             background-color: $sky;
                             color: $day;
-                            @extend .prl;
-                            $windowHeight:35px;
-                            height: $windowHeight;
-                            line-height: $windowHeight;
+                            $windowTopHeight:30px !global;
+                            height: $windowTopHeight;
+                            line-height: $windowTopHeight;
                             cursor: default;
                             .logo{
+                                float: left;
+                                @extend .prl;
                                 text-align: left;
+                                width: 2%;
+                                &:hover{
+                                    transition: $transition;
+                                    color: $silver;
+                                }
                             }
-                            .text{
+                            .name{
                                 text-align: center;
+                                width: calc(100% - 12% - 4*#{$prl});
                             }
                             .windowsActions{
                                 text-align: right;
-                                &:hoveR{
-                                    transition: $transition;
-                                    color: $fire;
+                                width: 10%;
+                                float: right;
+                                @extend .prl;
+                                ul{
+                                    li{
+                                        padding-left: $prl;
+                                        &:hoveR{
+                                            transition: $transition;
+                                            color: $fire;
+                                        }
+                                    }
                                 }
                             }
                         }
                         .body{
-                            background-color: rgba($day,$opacity*1.08);
-                            $windowBodyHeight:400px !global;
-                            min-height: $windowBodyHeight;
-                            padding-top: $xSmallSize;
-                        }
-                    }
-                }
-                .terminal{
-                    display: none;
-                    opacity: 0;
-                    .window-item{
-                        .body{
-                            background-color: rgba($night,$opacity);
-                            color: $silver;
-                            font-family: monospace;
-                            b{
-                                color: $fire;
-                                font-weight: $strong;
-                            }
-                            textarea{
-                                background-color: transparent;
-                                border: 0;
-                                color: $day;
-                                width:100%;
-                                min-height: $windowBodyHeight;
-                            }
-                            span{
-                                color: $sky;
-                           }
-                        }
-                    }
-                }
-                .documents{
-                    display: none;
-                    opacity: 0;
-                    .window-item{
-                        .body{
-                            ul{
+                            background-color: rgba($day,$opacity);
+                            $windowBodyHeight:500px !global;
+                            height: $windowBodyHeight;
+                            position: relative;
+                            .topMenu ul{
+                                height: $windowTopHeight;
+                                background-color: $day;
+                                cursor: default;
+                                border-bottom: 1px solid rgba($silver,0.5);
                                 li{
                                     .item{
-                                        margin: $smallSize;
-                                        .arrows{
-                                            font-size: $largeSize;
-                                            ul{
-                                                li{
-                                                    .subLiItem{
-                                                        margin: $xxSmallSize;
-                                                        margin-top: 0;
-                                                    }
-                                                    &:hover{
+                                        line-height: $windowTopHeight;
+                                        color: darken($sky,20%);
+                                        @extend .prl;
+                                        display: block;
+                                        &:hoveR{
+                                            transition: $transition;
+                                            color: $day;
+                                            background-color: $sky;
+                                        }
+                                        &:hover + .dropMenuContent{
+                                            transition: $transition;
+                                            display: block;
+                                        }
+                                    }
+                                    .dropMenuContent{
+                                        position: absolute;
+                                        display: none;
+                                        background-color: rgba($day,$opacity);
+                                        ul{
+                                            cursor: auto;
+                                            height: auto;
+                                            border: 0;
+                                            .bb{
+                                                border-bottom: 1px solid rgba($silver,0.5);
+                                            }
+                                            li{
+                                                @extend .item;
+                                                display: block;
+                                                border-right: 1px solid rgba($silver,0.5);
+                                                &:last-child{
+                                                    @extend .bb;
+                                                }
+                                                a{
+                                                    @extend .prl;
+                                                    display: block;
+                                                    color: inherit;
+                                                    &:hoveR{
                                                         transition: $transition;
-                                                        color:darken($silver,50%);
+                                                        color: $day;
+                                                        background-color: $sky;
                                                     }
                                                 }
                                             }
                                         }
                                     }
                                 }
-                                .urlBar{
-                                    .textBox{
-                                        background-color: $day;
-                                        border: 1px solid $silver;
-                                        width: calc(100% - 100%/6 - 64px);
+                            }
+                            .navigation{
+                                height: $windowTopHeight;
+                                ul{
+                                    li{
+                                        line-height: $windowTopHeight;
+                                    }
+                                    .arrows{
+                                        float: left;
+                                        font-size: $largeSize;
+                                        text-align: center;
+                                        ul{
+                                            @extend .prl;
+                                            li{
+                                                padding-right: $prl;
+                                                &:last-child{
+                                                    padding: 0;
+                                                }
+                                                &:hover{
+                                                    transition: $transition;
+                                                    color: lighten($night,20%);
+                                                }
+                                            }
+                                        }
                                     }
                                 }
-                                .searchBar{
-                                    .textBox{
-                                        background-color: $day;
-                                        border: 1px solid $silver;
-                                        width: calc(100% - 100%/6 - 32px);
+                            }
+                        }
+                    }
+                }
+                .documents{
+                    display: none;
+                    .window-item{
+                        .body{
+                            
+                        }
+                    }
+                }
+                .notes{
+                    display: block;
+                    .window-item{
+                        .body{
+                            .content{
+                                height: calc(100% - #{$windowTopHeight});
+                                textarea{
+                                    padding: 4px;
+                                    border: 0;
+                                    background: transparent;
+                                    margin-top: -1px;
+                                    width:calc(100% - 8px);
+                                    height: calc(100% - 9px);
+                                    overflow-y:scroll;
+                                    resize:none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .underWindow{
+                display: none;
+                position: relative;
+                width: $parentWindowWidth;
+                left: $parentWindowRight;
+                $underWindowTop:calc(100% - #{$fileSize}*2.1);
+                top: $underWindowTop;
+                height: 35%;
+                .underItem{
+                    height: 100%;
+                }
+                .keyboard{
+                    display: none;
+                    position: absolute;
+                    z-index: 10;
+                    width: 100%;
+                    .board{
+                        height: 100%;
+                        background-color: rgba(darken($night,10%),0.6);
+                        ul{
+                            height: 100%;
+                            li{
+                                $keySize:100%/15;
+                                color: $day;
+                                cursor: default;
+                                width: $keySize;
+                                text-align: center;
+                                .key{
+                                    background-color: rgba(darken($night,10%),$opacity/1.2);
+                                    &:hover{
+                                        transition: $transition;
+                                        background-color:darken($night,10%);
                                     }
-                                    text-align: right;
-                                    width: 30%;
+                                    display: block;
+                                    @extend .ptb;
+                                    margin: $xxxxSmallSize;
+                                    height: calc(20% - #{$ptb}*2);
+                                }
+                                .tab{
+                                    width: calc(200% - 2*#{$xxxxSmallSize});
+                                }
+                                .enter{
+                                    width: calc(200% - 2*#{$xxxxSmallSize});
+                                }
+                                .nonekey{
+                                    display: none;
+                                }
+                                .space{
+                                    width: calc(500% - 2*#{$xxxxSmallSize});
                                 }
                             }
                         }

@@ -16,6 +16,8 @@ $xxSmallSize:$xSmallSize/1.5;
 $largeSize:$normalSize*1.5;
 $xLargeSize:$largeSize*1.5;
 $xxLargeSize:$xLargeSize*1.5;
+$xxxSmallSize:$xxSmallSize/1.5;
+$xxxxSmallSize:$xxxSmallSize/1.5;
 $weight:300;
 $strong:700;
 
@@ -30,4 +32,4 @@ $transition:0.3s;
 //GRID NUMBERS
 $numberOfGrids:12;
 
-$opacity:0.9;
+$opacity:0.9*1.08;
